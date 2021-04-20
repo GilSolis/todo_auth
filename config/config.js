@@ -9,7 +9,7 @@ exports.creds = {
   
     responseMode: 'form_post', 
   
-    redirectUrl: 'http://localhost:8000/auth/openid/return', 
+    redirectUrl: 'https://anothertaskapp.herokuapp.com/auth/openid/return', 
   
     allowHttpForRedirectUrl: true,
   
