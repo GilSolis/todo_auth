@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Todos</h1>
+    <div class="container">
+    <h1>Tasks To Do:</h1>
     <ul>
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <span class='del'> Delete </span>
+                <button class='del'> Delete </button>
             </li>
     <% }) %>    
     </ul>
-
-    <h2><%= user.displayName %> has <%= left %> things left to do.</h2>
+    </div>
 
     <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+        <input type="text" placeholder="Enter Task" name='todoItem'>
         <input type="submit">
     </form>
+    <h2><%= user.displayName %> has <%= left %> tasks left to do.</h2>
 
     <a href="../auth/logout">Logout</a>
     
