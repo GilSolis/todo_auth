@@ -15,6 +15,7 @@ router.get('/login',
         failureRedirect: '/' 
       }
     )(req, res, next);
+    console.log("hi" + res)
   },
   function(req, res) {
     console.log('Login was called in the Sample');

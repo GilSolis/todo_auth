@@ -3,7 +3,7 @@ exports.creds = {
 
     clientID: 'bc1d9a41-e5db-43df-b334-62cd23981f52',
   
-    clientSecret: 'c8553134-f51c-48ea-937f-6ab5d7f4fb57', 
+    clientSecret: 'CEhO0Q6m-7zQ5EoPQYlMz-rU~tdX_698KP', 
   
     responseType: 'code id_token', 
   
