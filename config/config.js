@@ -37,7 +37,7 @@ exports.creds = {
     clockSkew: null,
   };
   
-  exports.destroySessionUrl = 'http://localhost:8000';
+  exports.destroySessionUrl = 'https://anothertaskapp.herokuapp.com/';
   
   exports.useMongoDBSessionStore = false;
   
